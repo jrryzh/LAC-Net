@@ -1,0 +1,194 @@
+
+<html>
+
+<head>
+    <link rel="StyleSheet" href="style.css" type="text/css" media="all">
+    <title>LAC-Net: Linear-Fusion Attention-Guided Convolutional Network for Accurate Robotic Grasping Under the Occlusion</title>
+    <meta property="og:title" content="LAC-Net: Linear-Fusion Attention-Guided Convolutional Network for Accurate Robotic Grasping Under the Occlusion">
+    <!-- Place this tag in your head or just before your close body tag. -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+</head>
+<body>
+    <br>
+    <div class="center-div">
+        <span style="font-size:40px">LAC-Net: <span style="color: gray;">L</span>inear-Fusion<span style="color: gray;">A</span>ttention-Guided <span style="color: gray;">C</span>onvolutional <span style="color: gray;">N</span>etwork for Accurate Robotic Grasping Under the Occlusion</span>
+        <br>
+    </div>
+
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Jinyu Zhang</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Yongchong Gu</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Jianxiong Gao</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Haitao Lin</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Qiang Sun</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xinwei Sun</a></span>
+                    </div>
+                </td>
+
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Qiang Sun</a></span>
+                    </div>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="350px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="#">Xiangyang Xue</a></span>
+                    </div>
+                </td>
+              
+                <td align="center" width="100px">
+                    <div class="center-div">
+                        <span style="font-size:22px"><a href="https://yanweifu.github.io/">Yanwei Fu</a></span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+    <table align="center" width="700px">
+        <tbody>
+            <tr>
+                <td align="center" width="100px">
+                    <div class="center-div">     
+                        <span style="font-size:22px">Fudan University</span>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+    
+    <div class="center-div">
+        <img class="round" style="width: 95%; height: auto;" src="./resources/images/teaser.png">
+    </div>
+    <br>
+    
+    <hr>
+    <div class="center-div">
+        <h1>Abstract</h1>
+    </div>
+    <p style="text-align:justify">
+        This paper addresses the challenge of perceiving complete object shapes through visual perception. While prior studies have demonstrated encouraging outcomes in segmenting the visible parts of objects within a scene, amodal segmentation, in particular, has the potential to allow robots to infer the occluded parts of objects. To this end, this paper introduces a new framework that explores amodal segmentation for robotic grasping in cluttered scenes, thus greatly enhancing robotic grasping abilities. Initially, we use a conventional segmentation algorithm to detect the visible segments of the target object, which provides shape priors for completing the full object mask. Particularly, to explore how to utilize semantic features from RGB images and geometric information from depth images, we propose a Linear-fusion Attention-guided Convolutional Network (LAC-Net). LAC-Net utilizes the linear-fusion strategy to effectively fuse this cross-modal data, and then uses the prior visible mask as attention map to guide the network to focus on target feature locations for further complete mask recovery. Using the amodal mask of the target object provides advantages in selecting more accurate and robust grasp points compared to relying solely on the visible segments. The results on different datasets show that our method achieves state-of-the-art performance. Furthermore, the robot experiments validate the feasibility and robustness of this method in the real world.
+    </p>
+    <br>
+    
+    <hr>
+    <div class="center-div">
+        <h1 id="code">Pipeline</h1>
+    </div>
+    <div class="center-div">
+        <img class="round" style="width: 95%; height: auto;" src="./resources/images/pipeline.png">
+    </div>
+    <br>
+    
+    <hr>
+    <div class="center-div">
+        <h1 id="paper">Paper and Code</h1>
+    </div>
+    <table align="center" width="600px">
+
+        <tbody>
+            <tr>
+                <td>
+                    <img class="layered-paper-big" style="height:175px" src="./resources/images/page1.png">
+                </td>
+                <td>
+                    <span style="font-size:14pt">J. Zhang, Y. Gu, J. Gao, H. Lin, Q. Sun, X. Sun, X. Xue, Y. Fu</span>
+                    <br><br>
+                    <b><span style="display:inline-block;width:600px;font-size:14pt">LAC-Net: Linear-Fusion Attention-Guided Convolutional Network for Accurate Robotic Grasping Under the Occlusion</span></b>
+                    <br><br>
+                    <span style="font-size:14pt">IROS 2024 Oral Pitch.</span>
+                    <br><br>
+                    <span style="font-size:20px">
+                        <a href="https://arxiv.org/abs/2308.15962">[arXiv]</a> &nbsp; &nbsp;
+                        <a href="#">[Code]</a> &nbsp; &nbsp;
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br><br>
+
+    <hr>
+    <div class="center-div">
+        <h1>Video demo</h1>
+    </div>
+    <div class="video-container">
+        <video controls>
+          <source src="./resources/videos/Video-Demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    <hr>
+
+    <div class="center-div">
+        <h1 id="code">Visualization Cases</h1>
+    </div>
+    <div class="center-div">
+        <img class="round" style="width: 95%; height: auto;" src="./resources/images/big_graph.png">
+    </div>
+    <br>
+    <hr>
+        
+    <table align="center" width="980px">
+        <tbody>
+            <tr>
+                <td>
+                    <left>
+                        <div class="center-div">
+                            <h1>Acknowledgements</h1>
+                        </div>
+                        <div class="center-div">
+                        Yanwei Fu is the corresponding author. If you are interested in this work, you can contact Professor Y. Fu via email: <span style="color: gray;">yanweifu@fudan.edu.cn</span>.
+                        The website is modified from this <a href="https://walsvid.github.io/Pixel2MeshPlusPlus/">template</a>.
+                        </div>
+                    </left>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br>
+
+
+
+</body>
+
+</html>
